@@ -5,18 +5,24 @@
 </figure>
 <div class="index-bloc-write">
      <div>
-         <p>
-             Bienvenue Chez Stackdrc <br> votre site web qui vous apprend des nouvelles connaissances 
-         <p>             
-          <p class="textWrite ">
-            Resaux Informatique
-         </p>
+         <p class="visible- visible-de-1">
+             Bienvenue Chez Stackdrc 
+         <p>         
+             <p class="visible- visible-de-2 slog">
+                votre site web qui vous apprend des nouvelles connaissances en :
+            </p>    
+            <div  class="visible- visible-de-3">
+                <p class="textWrite ">
+                    Resaux Informatique
+                </p>
+            </div>
+           
          <!--
          <p class="small-text-accueil">
              Apprendre des  nouvelles choses <br> grace  aux experts qualifier dans le domaine de l'informatique 
          </p> -->
       
-         <button class="begin-acceuil ">Commencer maintenant</button>
+         <button class="begin-acceuil visible- visible-de-4">Commencer maintenant</button>
      </div>
 </div>
 <div class="container-fluid">
