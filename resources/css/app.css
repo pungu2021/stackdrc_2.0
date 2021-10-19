@@ -68,8 +68,9 @@ header nav ul li a:hover{
 .index-bloc-write div p{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 50px;
     color: white;
+    font-weight: bold;
 }
 .index-bloc-write div{
     width: 100%;
@@ -85,14 +86,10 @@ header nav ul li a:hover{
     font-size: 20px;
     margin: auto;
     display: block;
-    transition: 0.5s;
+    transition: 0.2s;
     cursor: pointer;
 }
-.begin-acceuil:hover{
-    background-color: transparent;
-    color: #029dbe;
-    transition: 0.5s;
-}
+
 .textWrite{
     color: #029dbe !important;
     font-weight: bold;
@@ -176,4 +173,9 @@ header nav ul li a:hover{
     .slog{
         font-size: 25px !important;
         margin-top: -20px !important;
+    }
+    .begin-acceuil:hover{
+        background-color: transparent;
+        color: #029dbe;
+        transition: 0.2s;
     }

@@ -2070,7 +2070,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var index = 0;
 
 var EvenementShow = function EvenementShow() {
-  var tabTexte = ["Resaux Informatique", "Programmation", "Developpement Web", "Developpement mobile", "Big Data", "Marketing Digital"];
+  var tabTexte = ["Resaux Informatique", "Programmation", "Developpement Web", "Developpement mobile", "Developpement Desktop", "Big Data", "Marketing Digital"];
   var text = document.querySelector(".textWrite");
 
   function ShowText() {
@@ -2085,7 +2085,7 @@ var EvenementShow = function EvenementShow() {
   function IncrementIndex() {
     index++;
 
-    if (index == 6) {
+    if (index == 7) {
       index = 0;
     }
   }

@@ -6,7 +6,7 @@ require('./bootstrap');
  */
  var index=0;
  const EvenementShow=()=>{
-     var tabTexte=["Resaux Informatique","Programmation","Developpement Web","Developpement mobile","Big Data","Marketing Digital"];
+     var tabTexte=["Resaux Informatique","Programmation","Developpement Web","Developpement mobile","Developpement Desktop","Big Data","Marketing Digital"];
      var text=document.querySelector(".textWrite");
         function ShowText(){
               text.innerHTML=tabTexte[index];
@@ -17,7 +17,7 @@ require('./bootstrap');
         }
         function IncrementIndex(){
              index++;
-             if(index==6){
+             if(index==7){
                  index=0;
              }
         }
