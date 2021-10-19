@@ -95,6 +95,7 @@ header nav ul li a:hover{
     font-weight: bold;
     transition: 0.5s ease-in-out;
     margin-top: -25px;
+    font-size: 35px !important;
 }
 .small-text-accueil{
     font-size: 22px !important;
@@ -141,6 +142,7 @@ header nav ul li a:hover{
     .visible-de-4{
         transition-delay: .8s;
     }
+    /************************************************************/
     h2{
         font-size: 20px;
         opacity: 0.8;
@@ -178,4 +180,76 @@ header nav ul li a:hover{
         background-color: transparent;
         color: #029dbe;
         transition: 0.2s;
+    }
+    .dark-mode{
+        position:fixed;
+        top: 25px;
+        right: 50px;
+        height: 40px;
+        width: 320px;
+    }
+    .dark-mode form , .dark-mode .mode-global{
+        display: inline-block;
+    }
+    .dark-mode form {
+        float: left;
+    }
+    .mode-global{
+        width: 60px;
+        border: 1px solid #121A26;
+        border-radius: 50px;
+        background-color: rgba(128, 128, 128, 0.158);
+        cursor: pointer;
+        transition: 0.5s;
+        margin-left: 5px;
+    }
+    .mode-global .mode{
+        width: 30px;
+        background-color: white;
+        border-radius: 50px;
+        float: left;
+        
+    }
+    .textbox{
+      outline: none;
+        width: 200px;
+        border: 1px solid #06819c;
+        background-color: rgba(128, 128, 128, 0.103);
+        color: white;
+        transition: 0.5s;
+        border-radius: 50px;
+        padding-left: 10px;
+        padding-right: 25px;
+ 
+    }
+    .dark-image{
+        height: 25px;
+        width: 100%;
+    }
+    .search{
+        background-color:#013844;
+        border-radius: 50px;
+        margin-left: -40px;
+        width: 40px;
+        height: 30px;
+        border: 1px solid transparent;
+    }
+    .image-recherche{
+        width: 30px;
+        height: 18px;
+        
+    }
+    .light{
+        color: white !important;
+        
+    }
+    .dark-light{
+        text-decoration: none;
+        color: black !important;
+        border: 1px solid #06819c1e;
+        display: block;
+        margin-top: 25px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.116);
+        transition: 0.5s;
     }

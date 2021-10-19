@@ -36,8 +36,15 @@
                     </ul>
                 </nav>
                 <div class="dark-mode">
-                    <div class="mode">
-
+                      <form action="" method="GET">
+                          @csrf
+                          <input type="search" name="key" id="" class="textbox">
+                          <button class="search"> <img src="{{Storage::url("images/rec.png")}}" alt="" class="image-recherche"></button>
+                      </form>
+                    <div class="mode-global">
+                           <div class="mode">
+                                <img src="{{Storage::url("images/moon.png")}}" alt="" class="dark-image">
+                           </div>
                     </div>
                 </div>
         </header>

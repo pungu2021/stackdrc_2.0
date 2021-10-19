@@ -83,3 +83,65 @@ var observer= new IntersectionObserver(callEvent,option);
 document.querySelectorAll('[class*="visible-"]').forEach((element)=>{
      observer.observe(element);
 })
+
+/**
+ * Dark mode 
+ */
+
+const mode_global=document.querySelector(".mode-global");
+const mode=document.querySelector(".mode");
+const main1=document.querySelector(".main");
+const text_light= document.querySelectorAll(".text-light");
+const dark_image=document.querySelector(".dark-image");
+
+
+mode_global.addEventListener("click",function(){
+       if(window.getComputedStyle(mode,null).getPropertyValue("float")=="left"){
+           mode.style.float="right";
+            main1.style.backgroundColor="#121A26";
+            main1.style.color="white";
+            dark_image.setAttribute("src","/storage/images/lune.png");
+            mode.style.backgroundColor="transparent";
+             //suppression de la couleur blanche
+        text_light.forEach((element)=>{
+            element.classList.add("light");
+        })
+        // ajouter la couleur noire
+        text_light.forEach((element)=>{
+            element.classList.remove("dark-light");
+        })
+       }
+       else{
+        mode.style.float="left";
+        main1.style.backgroundColor="#121a2607 ";
+        main1.style.color="black";
+        dark_image.setAttribute("src","/storage/images/moon.png");
+        mode.style.backgroundColor="white";
+          // supprimer la couleur noir du textex
+          text_light.forEach((element)=>{
+            element.classList.remove("light");
+        })
+        // ajouter la couleur blanche
+        text_light.forEach((element)=>{
+            element.classList.add("dark-light");
+        })
+      
+       }
+})
+
+
+/**
+ * load color for dark mode 
+ */
+ window.addEventListener("load",function(){
+    main1.style.backgroundColor="#121a2607 ";
+    main1.style.color="black";
+      // supprimer la couleur noir du textex
+      text_light.forEach((element)=>{
+        element.classList.remove("light");
+    })
+    // ajouter la couleur blanche
+    text_light.forEach((element)=>{
+        element.classList.add("dark-light");
+    })
+})

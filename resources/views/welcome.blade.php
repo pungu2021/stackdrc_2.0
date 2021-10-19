@@ -33,7 +33,7 @@
                  <?php for ($i=0; $i < 6; $i++) { ?>             
                  <!--first col-->
                  <div class="col-lg-4 visible- visible-de-<?php echo $i+1?> bloc">
-                     <a href="#">
+                     <a href="#" class="text-light">
                         <figure>
                             <img src="{{Storage::url("images/logo2.png")}}" alt="" class="image-bloc">
                         </figure>
